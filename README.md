@@ -11,7 +11,7 @@ With im.kayac.com iPhone application, you can receive push notification when som
 ### How to install
 
 ```
-cd $LOKKA_ROOT/public/plugins
+cd $LOKKA_ROOT/public/plugin
 git clone git://github.com/morygonzalez/lokka-comment_notifier.git
 ```
 
