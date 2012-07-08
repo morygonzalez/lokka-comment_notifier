@@ -7,7 +7,7 @@ module Lokka
         path = request.env['PATH_INFO']
         if params["comment"] && /^\/admin\/comments/ !~ path
           message =<<-RUBY
-Lokka: #{params["comment"]["name"]} has posted a new comment.
+#{@site.title}: #{params["comment"]["name"]} has posted a new comment.
 #{truncate(escape_html(params["comment"]["body"]))}
           RUBY
           case Option.comment_notify_by
